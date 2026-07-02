@@ -4921,6 +4921,6 @@ textarea::placeholder{
     #navbar + .mobile-nav + section,
     body > section:first-of-type {
         margin-top: 0 !important;
-        padding-top: 35px !important;
+        padding-top: 20px !important;
     }
 }
