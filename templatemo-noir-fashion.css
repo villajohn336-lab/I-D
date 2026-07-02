@@ -4744,3 +4744,43 @@ textarea::placeholder{
     height:auto;
 
 }
+/* FINAL FIX - MOBILE HORIZONTAL MENU */
+@media (max-width: 768px) {
+
+    #navbar {
+        width: 100% !important;
+        overflow-x: auto !important;
+        overflow-y: hidden !important;
+    }
+
+    .nav-container {
+        display: block !important;
+        width: 100% !important;
+        overflow-x: auto !important;
+        overflow-y: hidden !important;
+        white-space: nowrap !important;
+    }
+
+    .nav-links {
+        display: inline-flex !important;
+        flex-direction: row !important;
+        flex-wrap: nowrap !important;
+        overflow-x: visible !important;
+        overflow-y: hidden !important;
+        white-space: nowrap !important;
+        min-width: max-content !important;
+        gap: 28px !important;
+        padding: 12px 20px !important;
+    }
+
+    .nav-links li {
+        display: inline-block !important;
+        flex: 0 0 auto !important;
+    }
+
+    .mobile-nav,
+    .hamburger,
+    .menu-toggle {
+        display: none !important;
+    }
+}
