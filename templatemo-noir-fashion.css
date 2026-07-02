@@ -4744,13 +4744,16 @@ textarea::placeholder{
     height:auto;
 
 }
-/* FINAL FIX - MOBILE HORIZONTAL MENU */
+/* MOBILE MENU HORIZONTAL - SIN SUBMENUS */
 @media (max-width: 768px) {
 
     #navbar {
+        position: relative !important;
         width: 100% !important;
+        height: auto !important;
         overflow-x: auto !important;
         overflow-y: hidden !important;
+        z-index: 9999 !important;
     }
 
     .nav-container {
@@ -4765,17 +4768,38 @@ textarea::placeholder{
         display: inline-flex !important;
         flex-direction: row !important;
         flex-wrap: nowrap !important;
-        overflow-x: visible !important;
-        overflow-y: hidden !important;
-        white-space: nowrap !important;
-        min-width: max-content !important;
-        gap: 28px !important;
+        align-items: center !important;
+        gap: 24px !important;
         padding: 12px 20px !important;
+        margin: 0 !important;
+        min-width: max-content !important;
+        white-space: nowrap !important;
+        overflow: visible !important;
     }
 
-    .nav-links li {
+    .nav-links > li {
         display: inline-block !important;
         flex: 0 0 auto !important;
+    }
+
+    .nav-links a {
+        white-space: nowrap !important;
+    }
+
+    /* Esto apaga los desplegables en celular */
+    .dropdown-menu,
+    .submenu-dropdown {
+        display: none !important;
+        visibility: hidden !important;
+        opacity: 0 !important;
+        pointer-events: none !important;
+    }
+
+    .dropdown:hover > .dropdown-menu,
+    .dropdown:focus-within > .dropdown-menu,
+    .submenu:hover > .submenu-dropdown,
+    .submenu:focus-within > .submenu-dropdown {
+        display: none !important;
     }
 
     .mobile-nav,
