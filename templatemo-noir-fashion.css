@@ -4760,3 +4760,83 @@ textarea::placeholder{
     }
 
 }
+@media (max-width: 768px){
+
+    .exam-hero{
+        min-height: auto !important;
+        padding: 180px 25px 80px 25px !important;
+    }
+
+    .exam-hero-content{
+        transform: none !important;
+        opacity: 1 !important;
+    }
+
+    .main-title{
+        display: block !important;
+        font-size: 42px !important;
+        line-height: 1.15 !important;
+        margin: 25px 0 !important;
+    }
+
+    .hero-description{
+        font-size: 17px !important;
+        line-height: 1.7 !important;
+    }
+}
+@media (max-width: 768px){
+
+    .exam-hero{
+        min-height: auto !important;
+        padding: 180px 25px 80px 25px !important;
+    }
+
+    .exam-hero-content{
+        transform: none !important;
+        opacity: 1 !important;
+    }
+
+    .main-title{
+        display: block !important;
+        font-size: 42px !important;
+        line-height: 1.15 !important;
+        margin: 25px 0 !important;
+    }
+
+    .hero-description{
+        font-size: 17px !important;
+        line-height: 1.7 !important;
+    }
+}
+/* Keep mobile navbar horizontal scroll */
+@media (max-width: 768px){
+
+    #navbar{
+        overflow-x: auto !important;
+        overflow-y: hidden !important;
+    }
+
+    .nav-container{
+        overflow-x: auto !important;
+        overflow-y: hidden !important;
+        width: 100% !important;
+    }
+
+    .nav-links{
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: nowrap !important;
+        overflow-x: auto !important;
+        overflow-y: hidden !important;
+        white-space: nowrap !important;
+        width: max-content !important;
+        max-width: none !important;
+        gap: 28px !important;
+        padding: 10px 20px !important;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .nav-links li{
+        flex: 0 0 auto !important;
+    }
+}
