@@ -4760,3 +4760,13 @@ textarea::placeholder{
     }
 
 }
+/* Fix navbar overlapping Final Project title */
+.exam-hero {
+    padding-top: 140px;
+}
+
+@media (max-width: 768px) {
+    .exam-hero {
+        padding-top: 170px;
+    }
+}
