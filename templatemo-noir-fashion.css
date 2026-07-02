@@ -4807,12 +4807,47 @@ textarea::placeholder{
     .menu-toggle {
         display: none !important;
     }
-}
+/* FINAL PROJECT MOBILE HERO FIX */
 @media (max-width: 768px) {
 
-    .hero,
-    section:first-of-type {
-        padding-top: 120px !important;
+    .exam-hero {
+        min-height: auto !important;
+        padding: 42px 24px 56px !important;
+        margin-top: 0 !important;
+        overflow: hidden !important;
+    }
+
+    .exam-hero-content {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding-top: 0 !important;
+        margin-top: 0 !important;
+        box-sizing: border-box !important;
+    }
+
+    .exam-badge {
+        display: inline-block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        margin-bottom: 14px !important;
+        position: relative !important;
+        z-index: 2 !important;
+    }
+
+    .main-title {
+        margin-top: 0 !important;
+        margin-bottom: 18px !important;
+        font-size: 40px !important;
+        line-height: 1.1 !important;
+    }
+
+    .hero-description {
+        margin-top: 0 !important;
+        max-width: 100% !important;
+        font-size: 20px !important;
+        line-height: 1.8 !important;
+        text-align: left !important;
+        overflow-wrap: break-word !important;
     }
 }
 /* FIX ASSIGNMENT PAGE TEXT IN MOBILE */
@@ -4868,5 +4903,24 @@ textarea::placeholder{
         max-width: 100% !important;
         white-space: normal !important;
         text-align: center !important;
+    }
+}
+/* DISTANCIA GENERAL ENTRE MENU Y CONTENIDO EN MOVIL */
+@media (max-width: 768px) {
+
+    body {
+        padding-top: 0 !important;
+    }
+
+    #navbar {
+        position: relative !important;
+        margin-bottom: 0 !important;
+    }
+
+    #navbar + section,
+    #navbar + .mobile-nav + section,
+    body > section:first-of-type {
+        margin-top: 0 !important;
+        padding-top: 35px !important;
     }
 }
