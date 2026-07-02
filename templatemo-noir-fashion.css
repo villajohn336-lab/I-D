@@ -4808,3 +4808,65 @@ textarea::placeholder{
         display: none !important;
     }
 }
+@media (max-width: 768px) {
+
+    .hero,
+    section:first-of-type {
+        padding-top: 120px !important;
+    }
+}
+/* FIX ASSIGNMENT PAGE TEXT IN MOBILE */
+@media (max-width: 768px) {
+
+    .featured {
+        width: 100% !important;
+        overflow-x: hidden !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .featured-container,
+    .featured-hero,
+    .featured-content,
+    .analysis-header {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+        box-sizing: border-box !important;
+    }
+
+    .featured-container {
+        padding-left: 24px !important;
+        padding-right: 24px !important;
+    }
+
+    .featured-hero {
+        display: block !important;
+    }
+
+    .subtitulo-semana {
+        width: 100% !important;
+        max-width: 100% !important;
+        font-size: 24px !important;
+        line-height: 1.25 !important;
+        white-space: normal !important;
+        overflow-wrap: break-word !important;
+        word-break: normal !important;
+    }
+
+    .week2-intro {
+        width: 100% !important;
+        max-width: 100% !important;
+        font-size: 15px !important;
+        line-height: 1.7 !important;
+        white-space: normal !important;
+        overflow-wrap: break-word !important;
+        text-align: left !important;
+    }
+
+    .week-label {
+        max-width: 100% !important;
+        white-space: normal !important;
+        text-align: center !important;
+    }
+}
