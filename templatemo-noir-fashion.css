@@ -372,7 +372,7 @@ nav.scrolled{
 .img-box:hover {
 	transform: translateY(-3px);
 }
-.assignment-week2 {
+.Assignment-week2 {
 	padding: 100px 80px;
 	background: #ffffff;
 	color: #000;
@@ -2524,7 +2524,7 @@ animation-delay:1s;
     justify-content: center;
 }
 
-/* ================= ASSIGNMENT 2 WEEK 3 ================= */
+/* ================= Assignment 2 WEEK 3 ================= */
 .ikea-analysis{
     padding: 120px 8%;
     background: #edeef3;
@@ -2806,7 +2806,7 @@ animation-delay:1s;
     object-fit: cover;
 }
 /* ========================================= */
-/* FIX GENERAL TEXTOS ASSIGNMENT Y WEEK 2 */
+/* FIX GENERAL TEXTOS Assignment Y WEEK 2 */
 /* ========================================= */
 
 /* Assignment 1 */
@@ -2901,10 +2901,10 @@ animation-delay:1s;
 
 }
 /* ======================================= */
-/* ASSIGNMENT 2 • WEEK 4 */
+/* Assignment 2 • WEEK 4 */
 /* ======================================= */
 
-#assignment2-week4{
+#Assignment2-week4{
 
     padding-top: 120px;
 
@@ -2941,7 +2941,7 @@ animation-delay:1s;
 
 /* ANALYSIS BLOCK */
 
-#assignment2-week4 .analysis-block{
+#Assignment2-week4 .analysis-block{
 
     display: flex;
 
@@ -2956,19 +2956,19 @@ animation-delay:1s;
 
 /* REVERSE */
 
-#assignment2-week4 .analysis-block.reverse{
+#Assignment2-week4 .analysis-block.reverse{
 
     flex-direction: row-reverse;
 }
 
 /* TEXT */
 
-#assignment2-week4 .analysis-text{
+#Assignment2-week4 .analysis-text{
 
     flex: 1;
 }
 
-#assignment2-week4 .analysis-text h3{
+#Assignment2-week4 .analysis-text h3{
 
     font-size: 2rem;
 
@@ -2977,7 +2977,7 @@ animation-delay:1s;
     color: #111827;
 }
 
-#assignment2-week4 .analysis-text p{
+#Assignment2-week4 .analysis-text p{
 
     font-size: 1rem;
 
@@ -2992,7 +2992,7 @@ animation-delay:1s;
 
 /* IMAGE GRID */
 
-#assignment2-week4 .analysis-images{
+#Assignment2-week4 .analysis-images{
 
     flex: 1;
 
@@ -3005,7 +3005,7 @@ animation-delay:1s;
 
 /* IMAGES */
 
-#assignment2-week4 .analysis-images img{
+#Assignment2-week4 .analysis-images img{
 
     width: 100%;
 
@@ -3023,7 +3023,7 @@ animation-delay:1s;
     0 10px 30px rgba(0,0,0,0.08);
 }
 
-#assignment2-week4 .analysis-images img:hover{
+#Assignment2-week4 .analysis-images img:hover{
 
     transform: translateY(-8px) scale(1.02);
 
@@ -3033,12 +3033,12 @@ animation-delay:1s;
 
 /* VIDEO */
 
-#assignment2-week4 .analysis-image{
+#Assignment2-week4 .analysis-image{
 
     flex: 1;
 }
 
-#assignment2-week4 .analysis-image video{
+#Assignment2-week4 .analysis-image video{
 
     width: 100%;
 
@@ -3054,18 +3054,18 @@ animation-delay:1s;
 
 @media(max-width:1000px){
 
-    #assignment2-week4 .analysis-block,
-    #assignment2-week4 .analysis-block.reverse{
+    #Assignment2-week4 .analysis-block,
+    #Assignment2-week4 .analysis-block.reverse{
 
         flex-direction: column;
     }
 
-    #assignment2-week4 .analysis-images{
+    #Assignment2-week4 .analysis-images{
 
         width: 100%;
     }
 
-    #assignment2-week4 .analysis-images img{
+    #Assignment2-week4 .analysis-images img{
 
         height: 220px;
     }
@@ -3074,7 +3074,7 @@ animation-delay:1s;
 
 @media(max-width:700px){
 
-    #assignment2-week4 .analysis-images{
+    #Assignment2-week4 .analysis-images{
 
         grid-template-columns: 1fr;
     }
@@ -4234,14 +4234,14 @@ body{
 /* SECTIONS OSCURAS */
 /* ======================================= */
 
-.assignment-week2,
+.Assignment-week2,
 .team-section,
 .featured,
 .contact,
 .collections,
 .exam-section,
 .ikea-analysis,
-#assignment2-week4{
+#Assignment2-week4{
 
     background:
     linear-gradient(
@@ -4555,10 +4555,10 @@ textarea::placeholder{
 
 
 /* ======================================= */
-/* ASSIGNMENT 3 */
+/* Assignment 3 */
 /* ======================================= */
 
-.assignment3-block{
+.Assignment3-block{
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -4566,14 +4566,14 @@ textarea::placeholder{
 }
 
 /* GRID SOLO PARA IMÁGENES */
-.assignment3-gallery{
+.Assignment3-gallery{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 8px;
 }
 
 /* IMÁGENES */
-.assignment3-gallery img{
+.Assignment3-gallery img{
     width: 100%;
     height: 450px;
     object-fit: contain;
@@ -4582,12 +4582,12 @@ textarea::placeholder{
     transition: transform 0.3s ease;
 }
 
-.assignment3-gallery img:hover{
+.Assignment3-gallery img:hover{
     transform: scale(1.02);
 }
 
 /* 🔥 VIDEO (SEPARADO DEL PROBLEMA PRINCIPAL) */
-.assignment3-gallery video{
+.Assignment3-gallery video{
     width: 100%;
     height: auto;
     max-height: 320px;
@@ -4597,22 +4597,22 @@ textarea::placeholder{
     transition: transform 0.3s ease;
 }
 
-.assignment3-gallery video:hover{
+.Assignment3-gallery video:hover{
     transform: scale(1.02);
 }
 
 /* RESPONSIVE */
 @media (max-width:768px){
 
-    .assignment3-gallery{
+    .Assignment3-gallery{
         grid-template-columns: 1fr;
     }
 
-    .assignment3-gallery img{
+    .Assignment3-gallery img{
         height: 300px;
     }
 
-    .assignment3-gallery video{
+    .Assignment3-gallery video{
         max-height: 250px;
     }
 }
