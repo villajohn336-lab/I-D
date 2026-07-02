@@ -4704,7 +4704,6 @@ textarea::placeholder{
 
     .nav-container {
         overflow-x: auto;
-        overflow-y: hidden;
     }
 
     .nav-link {
@@ -4743,12 +4742,5 @@ textarea::placeholder{
     width:100%;
     max-width:350px;
     height:auto;
-
-}
-@media (max-width:768px){
-
-    section{
-        padding:70px 20px;
-    }
 
 }
