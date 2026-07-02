@@ -1,0 +1,233 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Assignments</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="Assigment/css/main.css" />
+
+<style>
+
+	body {
+		font-size: 18px;
+		line-height: 1.8;
+		background: #f5f7fb;
+	}
+
+	/* HEADER */
+	#header {
+		background: linear-gradient(135deg, #667eea, #764ba2);
+		color: white;
+		padding: 40px 0;
+		text-align: center;
+	}
+
+	/* BOTONES SEMANA */
+	.toggle {
+		cursor: pointer;
+		padding: 15px;
+		margin: 20px auto;
+		max-width: 900px;
+		border-radius: 12px;
+		color: white;
+		font-size: 26px;
+		text-align: center;
+		transition: 0.3s;
+	}
+
+	/* 🎨 COLORES LIMPIOS */
+	.week1 { background: #386e93; }  /* turquesa */
+	.week2 { background: #a83bc1; }  /* lila */
+
+	.toggle:hover {
+		transform: scale(1.03);
+		box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+		opacity: 0.9;
+	}
+
+	/* CONTENIDO OCULTO */
+	.content {
+		display: none;
+		animation: fadeIn 0.5s ease;
+	}
+
+	@keyframes fadeIn {
+		from {opacity:0; transform: translateY(10px);}
+		to {opacity:1; transform: translateY(0);}
+	}
+
+	/* BLOQUES */
+	.bloque {
+		background: white;
+		padding: 30px;
+		margin: 30px auto;
+		border-radius: 15px;
+		box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+		max-width: 900px;
+		transition: 0.3s;
+	}
+
+	.bloque:hover {
+		transform: translateY(-5px);
+	}
+
+	.paso {
+		margin-bottom: 20px;
+	}
+
+	.imagen {
+		width: 100%;
+		max-width: 400px;
+		display: block;
+		margin: 15px auto;
+		border-radius: 12px;
+	}
+
+</style>
+
+</head>
+
+<body>
+
+<div id="page-wrapper">
+
+<section id="header">
+
+	<h1><a href="Aboutme.html" style="color:white;">Assignments</a></h1>
+
+	<nav id="nav">
+		<ul>
+			<li><a href="Aboutme.html">Home</a></li>
+			<li class="current"><a href="#">Assignments</a></li>
+		</ul>
+	</nav>
+
+	<p>Weekly Work Overview</p>
+
+</section>
+
+<section id="main">
+
+<!-- ================= WEEK 1 ================= -->
+
+<div class="toggle week1" onclick="toggleContent('w1')">
+	Week 1 ▼
+</div>
+
+<div id="w1" class="content">
+
+	<div class="bloque">
+		<h2>Website Development</h2>
+
+		<div class="paso">
+			<p><strong>1.</strong> An HTML template was downloaded as the base for the website.</p>
+			<img src="Assigment/w01/imagenes/F01.jpg.png" class="imagen">
+		</div>
+
+		<div class="paso">
+			<p><strong>2.</strong> The team presentation content was developed.</p>
+		</div>
+
+		<div class="paso">
+			<p><strong>3.</strong> The folder structure was carefully organized to store images, code, and resources.</p>
+		</div>
+
+		<div class="paso">
+			<p><strong>4.</strong> The code was implemented in Visual Studio Code, adapting the template.</p>
+		</div>
+
+	</div>
+
+	<div class="bloque">
+		<h2>Hydration Problem Analysis</h2>
+
+		<div class="paso">
+			<p><strong>1.</strong> The hydration problem among university students was identified.</p>
+		</div>
+
+		<div class="paso">
+			<p><strong>2.</strong> Ideas were shared using a collaborative Excel file.</p>
+			<img src="Assigment/w01/imagenes/F04.jpg.png" class="imagen">
+		</div>
+
+		<div class="paso">
+			<p><strong>3.</strong> Possible solutions were proposed based on collected data.</p>
+		</div>
+
+	</div>
+
+</div>
+
+<!-- ================= WEEK 2 ================= -->
+
+<div class="toggle week2" onclick="toggleContent('w2')">
+	Week 2 ▼
+</div>
+
+<div id="w2" class="content">
+
+	<div class="bloque">
+		<h2>Critical Factors Research</h2>
+
+		<div class="paso">
+			<p><strong>1.</strong> Work teams gathered to identify critical hydration factors.</p>
+		</div>
+
+		<div class="paso">
+			<p><strong>2.</strong> A survey was designed to evaluate importance levels.</p>
+		</div>
+
+		<div class="paso">
+			<p><strong>3.</strong> Statistical analysis was performed (boxplot, mean, normalization, hypothesis testing).</p>
+		</div>
+
+		<div class="paso">
+			<p><strong>4.</strong> Conclusions were drawn based on data results.</p>
+		</div>
+
+	</div>
+
+	<div class="bloque">
+		<h2>Solution Development</h2>
+
+		<div class="paso">
+			<p>Brainstorming was conducted to generate solutions.</p>
+		</div>
+
+		<div class="paso">
+			<p>A reusable filtered water bottle was proposed.</p>
+		</div>
+
+		<div class="paso">
+			<p>A sketch was created and later modeled in Fusion 360.</p>
+		</div>
+
+	</div>
+
+</div>
+
+</section>
+
+<section id="footer">
+	<div class="container">
+		<p style="text-align:center;">© Team of 4</p>
+	</div>
+</section>
+
+</div>
+
+<!-- SCRIPT -->
+<script>
+function toggleContent(id) {
+	let content = document.getElementById(id);
+
+	if (content.style.display === "block") {
+		content.style.display = "none";
+	} else {
+		content.style.display = "block";
+	}
+}
+</script>
+
+</body>
+</html>
