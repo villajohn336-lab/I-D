@@ -4996,3 +4996,35 @@ textarea::placeholder{
     color: #8d73ff !important;
     margin: 0 0 16px !important;
 }
+
+.team-card-final p {
+    font-size: 16px !important;
+    line-height: 1.7 !important;
+    max-width: 620px !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+    color: rgba(255,255,255,.82) !important;
+}
+
+@media(max-width:768px) {
+
+    .team-section-final {
+        padding: 55px 20px !important;
+    }
+
+    .team-grid {
+        grid-template-columns: 1fr !important;
+        max-width: 360px !important;
+        gap: 26px !important;
+        margin-top: 35px !important;
+    }
+
+    .team-card-final {
+        padding: 22px !important;
+    }
+
+    .team-card-final img {
+        max-width: 260px !important;
+        height: 220px !important;
+    }
+}
