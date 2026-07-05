@@ -5028,3 +5028,37 @@ textarea::placeholder{
         height: 220px !important;
     }
 }
+/* TEAM TEXT CARD FIX */
+#team .team-card-final h3,
+#team .team-card-final h4,
+#team .team-card-final p {
+    max-width: 760px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: center !important;
+}
+
+#team .team-card-final h3 {
+    margin-top: 28px !important;
+    margin-bottom: 8px !important;
+    font-size: 28px !important;
+    line-height: 1.25 !important;
+}
+
+#team .team-card-final h4 {
+    margin-bottom: 18px !important;
+    font-size: 18px !important;
+    line-height: 1.35 !important;
+    color: #8d73ff !important;
+}
+
+#team .team-card-final p {
+    background: rgba(255,255,255,.04) !important;
+    border: 1px solid rgba(255,255,255,.08) !important;
+    border-radius: 14px !important;
+    padding: 18px 22px !important;
+    margin-bottom: 35px !important;
+    font-size: 16px !important;
+    line-height: 1.8 !important;
+    color: rgba(255,255,255,.82) !important;
+}
