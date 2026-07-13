@@ -1864,3 +1864,405 @@ footer {
 		text-align: center;
 	}
 }
+<style>
+
+/* ===================================================== */
+/* ===== PRACTICE 3: 3D SCANNING AND RESIN PRINTING ==== */
+/* ===================================================== */
+
+.resin-practice {
+    position: relative;
+    padding: 100px 20px;
+    overflow: hidden;
+}
+
+.resin-practice::before {
+    content: "";
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    top: 100px;
+    right: -280px;
+    border-radius: 50%;
+    background: rgba(99, 16, 16, 0.12);
+    filter: blur(20px);
+    pointer-events: none;
+}
+
+.resin-practice::after {
+    content: "";
+    position: absolute;
+    width: 380px;
+    height: 380px;
+    bottom: 100px;
+    left: -220px;
+    border-radius: 50%;
+    background: rgba(40, 14, 70, 0.15);
+    filter: blur(20px);
+    pointer-events: none;
+}
+
+
+/* ===== CONTENEDOR ===== */
+
+.resin-practice .featured-container {
+    position: relative;
+    z-index: 2;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* ===== ENCABEZADO ===== */
+
+.resin-header {
+    max-width: 920px;
+    margin-bottom: 55px;
+}
+
+.resin-header .week-label {
+    display: inline-block;
+    margin-bottom: 18px;
+}
+
+.resin-header .subtitulo-semana {
+    margin-bottom: 22px;
+}
+
+.resin-intro {
+    max-width: 900px;
+    margin: 0;
+    color: #d6d6d6;
+    font-size: 1.08rem;
+    line-height: 1.8;
+}
+
+
+/* ===== CUADRÍCULA DE PROCESOS ===== */
+
+.resin-process-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 30px;
+}
+
+
+/* ===== TARJETAS ===== */
+
+.resin-process-card {
+    position: relative;
+    display: flex;
+    gap: 22px;
+    min-width: 0;
+    padding: 28px;
+    border: 1px solid rgba(255, 255, 255, 0.11);
+    border-radius: 22px;
+    background:
+        linear-gradient(
+            145deg,
+            rgba(23, 23, 23, 0.97),
+            rgba(3, 3, 3, 0.98)
+        );
+    box-shadow: 0 14px 35px rgba(0, 0, 0, 0.38);
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.resin-process-card:hover {
+    transform: translateY(-7px);
+    border-color: rgba(255, 255, 255, 0.23);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.52);
+}
+
+
+/* ===== NÚMERO DE ETAPA ===== */
+
+.resin-step-number {
+    flex: 0 0 auto;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #631010;
+    color: #ffffff;
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    box-shadow: 0 6px 18px rgba(99, 16, 16, 0.45);
+}
+
+
+/* ===== CONTENIDO DE TARJETAS ===== */
+
+.resin-card-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.resin-card-content h3 {
+    margin: 7px 0 14px;
+    color: #ffffff;
+    font-size: 1.35rem;
+    line-height: 1.3;
+}
+
+.resin-card-content > p {
+    margin: 0 0 23px;
+    color: #e7e7e7;
+    font-size: 0.98rem;
+    line-height: 1.7;
+}
+
+
+/* ===== DOS IMÁGENES ===== */
+
+.resin-image-pair {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+}
+
+.resin-image-box {
+    min-width: 0;
+    margin: 0;
+    overflow: hidden;
+    border-radius: 15px;
+    background: #0b0b0b;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.resin-image-box img {
+    display: block;
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    transition: transform 0.45s ease;
+}
+
+.resin-image-box:hover img {
+    transform: scale(1.06);
+}
+
+.resin-image-box figcaption {
+    min-height: 62px;
+    display: flex;
+    align-items: center;
+    padding: 11px 13px;
+    color: #d8d8d8;
+    font-size: 0.79rem;
+    line-height: 1.4;
+}
+
+
+/* ===== RESULTADOS ===== */
+
+.resin-results {
+    margin-top: 55px;
+    padding: 35px;
+    border-radius: 22px;
+    background: #631010;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.34);
+}
+
+.resin-results-title {
+    margin-bottom: 27px;
+}
+
+.resin-results-title span {
+    display: block;
+    margin-bottom: 7px;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.resin-results-title h3 {
+    margin: 0;
+    color: #ffffff;
+    font-size: 1.75rem;
+}
+
+.resin-results-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 17px;
+}
+
+.resin-result-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 19px;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.24);
+    border: 1px solid rgba(255, 255, 255, 0.09);
+}
+
+.resin-result-item span {
+    flex: 0 0 auto;
+    color: rgba(255, 255, 255, 0.55);
+    font-size: 0.78rem;
+    font-weight: 700;
+}
+
+.resin-result-item p {
+    margin: 0;
+    color: #ffffff;
+    font-size: 0.94rem;
+    line-height: 1.6;
+}
+
+
+/* ===== SEGURIDAD ===== */
+
+.resin-safety {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    margin-top: 28px;
+    padding: 27px 30px;
+    border-radius: 20px;
+    background: #050505;
+    border: 1px solid rgba(255, 255, 255, 0.13);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
+}
+
+.resin-safety-icon {
+    flex: 0 0 auto;
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #631010;
+    border-radius: 50%;
+    color: #ffffff;
+    background: #631010;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.resin-safety-text h3 {
+    margin: 0 0 8px;
+    color: #ffffff;
+    font-size: 1.25rem;
+}
+
+.resin-safety-text p {
+    margin: 0;
+    color: #dddddd;
+    font-size: 0.95rem;
+    line-height: 1.65;
+}
+
+
+/* ===== TABLETS ===== */
+
+@media (max-width: 1000px) {
+
+    .resin-process-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .resin-image-box img {
+        height: 260px;
+    }
+
+}
+
+
+/* ===== CELULARES ===== */
+
+@media (max-width: 650px) {
+
+    .resin-practice {
+        padding: 75px 15px;
+    }
+
+    .resin-header {
+        margin-bottom: 38px;
+    }
+
+    .resin-intro {
+        font-size: 0.98rem;
+        line-height: 1.7;
+    }
+
+    .resin-process-card {
+        display: block;
+        padding: 20px;
+        border-radius: 18px;
+    }
+
+    .resin-step-number {
+        margin-bottom: 16px;
+    }
+
+    .resin-card-content h3 {
+        margin-top: 0;
+        font-size: 1.2rem;
+    }
+
+    .resin-image-pair {
+        grid-template-columns: 1fr;
+    }
+
+    .resin-image-box img {
+        height: 235px;
+    }
+
+    .resin-results {
+        padding: 24px 18px;
+    }
+
+    .resin-results-title h3 {
+        font-size: 1.4rem;
+    }
+
+    .resin-results-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .resin-safety {
+        align-items: flex-start;
+        padding: 22px 18px;
+    }
+
+    .resin-safety-icon {
+        width: 43px;
+        height: 43px;
+        font-size: 1.2rem;
+    }
+
+}
+
+
+/* ===== CELULARES PEQUEÑOS ===== */
+
+@media (max-width: 390px) {
+
+    .resin-process-card {
+        padding: 17px;
+    }
+
+    .resin-image-box img {
+        height: 205px;
+    }
+
+    .resin-safety {
+        display: block;
+    }
+
+    .resin-safety-icon {
+        margin-bottom: 15px;
+    }
+
+}
+
+</style>
