@@ -5573,3 +5573,77 @@ textarea::placeholder{
         margin-bottom: 15px;
     }
 }
+/*==========================
+      STAGE 06
+===========================*/
+
+.attachment-grid{
+
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:35px;
+    margin-top:60px;
+
+}
+
+.attachment-card{
+
+    background:#11131d;
+    border-radius:20px;
+    padding:35px;
+    text-align:center;
+    border:1px solid rgba(255,255,255,.08);
+    transition:.35s;
+
+}
+
+.attachment-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.attachment-card h3{
+
+    color:#ffffff;
+    font-size:26px;
+    margin-bottom:18px;
+
+}
+
+.attachment-card p{
+
+    color:#cfcfcf;
+    line-height:1.8;
+    margin-bottom:30px;
+
+}
+
+.attachment-btn{
+
+    display:inline-block;
+    padding:14px 28px;
+    background:#7b5cff;
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:600;
+    transition:.3s;
+
+}
+
+.attachment-btn:hover{
+
+    background:#9277ff;
+
+}
+
+@media(max-width:768px){
+
+    .attachment-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
